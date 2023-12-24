@@ -67,7 +67,7 @@ with open(budget_file_path, encoding='UTF-8') as csvfile:
             
 largest_loss = min(changeInPNL)
 findIndex = changeInPNL.index(min(changeInPNL))
-largest_loss_date = changeDates[48]          
+largest_loss_date = changeDates[findIndex]          
 
 
 #OUTPUT
