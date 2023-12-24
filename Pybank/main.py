@@ -35,12 +35,12 @@ with open(budget_file_path, encoding='UTF-8') as csvfile:
     #create a reader with current file
     reader_file = csv.reader(csvfile,delimiter=",")   
     
-    #skip header row
+    #skip header row and save to variable
     skip_header = next(reader_file)
-    
+   
     #loop to get the total number of months
     for row in reader_file:
-        
+    
         #get total number of months
         total_months+=1
         
@@ -102,7 +102,7 @@ output.append(f"Greatest Decrease in Profits: {largest_loss_date} (${largest_los
 
 
 #Save results to a text file
-results_path = os.path.join("..","analysis","Results.txt")   
+results_path = os.path.join("..","analysis","Pybank_Analysis.txt")   
 
 #testing code
 file = open(results_path,'w')   
