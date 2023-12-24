@@ -113,7 +113,8 @@ for x in output:
     file.write(x)
     file.write('\n')
 
- 
+for y in output:
+     print(y)
         
     
 
